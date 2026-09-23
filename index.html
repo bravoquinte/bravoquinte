@@ -378,52 +378,42 @@ function renderPricing(){
 
 function fmtDate(iso){if(!iso)return'';try{return new Date(iso).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'});}catch(e){return iso;}}
 
+var BLOG_POSTS=[
+{title:"Grand National du Trot - Argentan",date:"2026-09-22",slug:"grand-national-du-trot-argentan",excerpt:"Analyse du Grand National du Trot dispute a Argentan. Retrouvez notre selection complete avec les partants, les pronostics et les tickets pour cette epreuve hippique majeure."},
+{title:"Prix Calabrais - Auteuil 22 septembre",date:"2026-09-22",slug:"prix-calabrais-auteuil-22-septembre",excerpt:"Notre analyse du Prix Calabrais a Auteuil. Course de haies avec un plateau releve. Decouvrez notre selection et nos pronostics detailles."},
+{title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide methodologique pour analyser un quinte comme un expert. Lecture de forme, piste, terrain et conditions de course. Maitrisez les cles de la reussite."},
+{title:"Pronostic Quinte - Prix Communaute de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaute de Bruxelles. Notre selection de 8 chevaux, le top 5 et les tickets a trois budgets differents."},
+{title:"Pronostic Quinte - Prix d'ancenis du 20 septembre",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quinte du jour : Prix d'Ancenis. Retrouvez les partants, notre base, les outsiders et les propositions de tickets."}
+];
+
 function renderBlogPosts(){
   var el=document.querySelector('.blogger-section');
   if(!el)return;
-  var req=new XMLHttpRequest();
-  req.open('GET','/feeds/posts/default?alt=json&max-results=25',true);
-  req.timeout=15000;
-  req.onreadystatechange=function(){
-    if(req.readyState!==4)return;
-    if(req.status!==200&&req.status!==0){el.innerHTML='<p>Impossible de charger les articles.</p>';return;}
-    var data=null;try{data=JSON.parse(req.responseText);}catch(e){}
-    var entries=(data&&data.feed&&data.feed.entry)||[];
-    window.__BRAVO_POSTS=entries;
-    var out='';
-    for(var k=0;k<entries.length;k++){
-      var e=entries[k];
-      var title=(e.title&&e.title.$t)?e.title.$t:'';
-      var content=(e.content&&e.content.$t)?e.content.$t:((e.summary&&e.summary.$t)?e.summary.$t:'');
-      var tmp=document.createElement('div');tmp.innerHTML=content;
-      var excerpt=(tmp.textContent||'').replace(/\s+/g,' ').trim().slice(0,280);
-      out+='<article class="bravo-post">';
-      out+='<h2 class="post-title">'+title+'</h2>';
-      out+='<p class="post-meta">Publi&#233; le '+fmtDate(e.published&&e.published.$t)+'</p>';
-      out+='<div class="post-content">'+(excerpt?'<p>'+excerpt+'...</p>':'')+'</div>';
-      out+='<button class="btn post-read-btn" data-idx="'+k+'">Lire l\'article &#8594;</button>';
-      out+='</article>';
-    }
-    el.innerHTML=out||'<p>Aucun article.</p>';
-  };
-  req.send();
+  var out='';
+  for(var k=0;k<BLOG_POSTS.length;k++){
+    var p=BLOG_POSTS[k];
+    out+='<article class="bravo-post">';
+    out+='<h2 class="post-title">'+p.title+'</h2>';
+    out+='<p class="post-meta">Publie le '+fmtDate(p.date)+'</p>';
+    out+='<div class="post-content"><p>'+p.excerpt+'</p></div>';
+    out+='<button class="btn post-read-btn" data-idx="'+k+'">Lire l\'article &#8594;</button>';
+    out+='</article>';
+  }
+  el.innerHTML=out||'<p>Aucun article.</p>';
 }
 
 function showBlogPost(idx){
   var el=document.querySelector('.blogger-section');
-  if(!el||!window.__BRAVO_POSTS)return;
-  var e=window.__BRAVO_POSTS[idx];if(!e)return;
-  var title=(e.title&&e.title.$t)?e.title.$t:'';
-  var content=(e.content&&e.content.$t)?e.content.$t:'';
+  if(!el||!BLOG_POSTS)return;
+  var p=BLOG_POSTS[idx];if(!p)return;
   var html='<article class="bravo-post">';
-  html+='<h1 class="post-title">'+title+'</h1>';
-  html+='<p class="post-meta">Publi&#233; le '+fmtDate(e.published&&e.published.$t)+'</p>';
-  html+='<div class="post-content">'+content+'</div>';
-  html+='<button class="btn post-back-btn" style="margin-top:2rem;">&#8592; Retour &#224; la liste</button>';
+  html+='<h1 class="post-title">'+p.title+'</h1>';
+  html+='<p class="post-meta">Publie le '+fmtDate(p.date)+'</p>';
+  html+='<div class="post-content"><p>'+p.excerpt+'</p></div>';
+  html+='<button class="btn post-back-btn" style="margin-top:2rem;">&#8592; Retour a la liste</button>';
   html+='</article>';
   el.innerHTML=html;window.scrollTo(0,0);
 }
-
 document.addEventListener('click',function(ev){
   var t=ev.target;
   if(t.classList&&t.classList.contains('post-read-btn')){var idx=parseInt(t.getAttribute('data-idx'),10);if(!isNaN(idx))showBlogPost(idx);}
