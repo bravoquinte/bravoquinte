@@ -427,16 +427,8 @@ function renderBlogPosts(){
 }
 
 function showBlogPost(idx){
-  var el=document.querySelector('.blogger-section');
-  if(!el||!BLOG_POSTS)return;
   var p=BLOG_POSTS[idx];if(!p)return;
-  var html='<article class="bravo-post">';
-  html+='<h1 class="post-title">'+p.title+'</h1>';
-  html+='<p class="post-meta">Publi&#233; le '+fmtDate(p.date)+'</p>';
-  html+='<div class="post-content"><p>'+p.excerpt+'</p></div>';
-  html+='<button class="btn post-back-btn" style="margin-top:2rem;">&#8592; Retour &#224; la liste</button>';
-  html+='</article>';
-  el.innerHTML=html;window.scrollTo(0,0);
+  window.location.href=p.slug+'.html';
 }
 
 document.addEventListener('click',function(ev){
