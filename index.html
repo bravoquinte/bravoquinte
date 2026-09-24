@@ -133,8 +133,8 @@ tr:hover td{background:#f0fdf4}
 </div>
 </div>
 <div class='hero-media'>
-<a href='https://youtu.be/8D4O7okeFGM' rel='noopener noreferrer' style='display:block;position:relative;padding-bottom:56.25%;background:#000;border-radius:8px;overflow:hidden;' target='_blank'>
-<img alt='Vidéo du jour' src='https://img.youtube.com/vi/8D4O7okeFGM/maxresdefault.jpg' style='position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;'/>
+<a href='https://youtu.be/ZL4xrrlJmzg' rel='noopener noreferrer' style='display:block;position:relative;padding-bottom:56.25%;background:#000;border-radius:8px;overflow:hidden;' target='_blank'>
+<img alt='Vidéo du jour' src='https://img.youtube.com/vi/ZL4xrrlJmzg/maxresdefault.jpg' style='position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;'/>
 <div style='position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;'>
 <svg fill='white' height='28' viewBox='0 0 24 24' width='28'><polygon points='5,3 19,12 5,21'></polygon></svg>
 </div>
@@ -307,26 +307,10 @@ window.__BRAVO_PAGE_TYPE='';
 (function(){
 'use strict';
 
-var chevaux=[
-{num:1,nom:"KOHAKOU",driver:"Boutin Hug.",entraineur:"Gavilan Mme S.",musique:"1p 1p 3p 9p 3p 2p 2p 2p 2p 2p 4p 2p",cote:"7"},
-{num:2,nom:"PERSIS",driver:"Trolley de Prevaux G.",entraineur:"Gavilan Mme S.",musique:"8p 5p 1p 2p 2p 8p 1p 2p 3p 3p 2p 8p",cote:"22"},
-{num:3,nom:"VICTORIA COLONIA",driver:"Pasquier S.",entraineur:"Ferland (S) C.",musique:"1p 2p 1p 6p 9p 4p",cote:"6"},
-{num:4,nom:"PERSIAN GRACE",driver:"Boudot P.C.",entraineur:"Pineda Mme M.",musique:"2p 1p 2p 12p 5p 2p 2p",cote:"4"},
-{num:5,nom:"MACKAYA",driver:"Lecoeuvre C.",entraineur:"Guarnieri M.",musique:"13p 1p 2p 7p 5p 5p 7p",cote:"17"},
-{num:6,nom:"ESTIVALE",driver:"Guyon M.",entraineur:"Fabre (S) A&L.",musique:"1p 3p 3p 9p",cote:"4"},
-{num:7,nom:"VANVITELLI",driver:"Grandin Mar.",entraineur:"Kobayashi S.",musique:"3p 5p 7p 1p 3p 6p 2p",cote:"16"},
-{num:8,nom:"VICTORY PACE",driver:"Pouchin A.",entraineur:"Mosse (S) G.",musique:"4p 1p 5p 2p 2p 7p 7p 5p",cote:"6",statut:"BASE",cls:"badge-base"},
-{num:9,nom:"KIANDA",driver:"Chuette Mlle S.",entraineur:"Delzangles M.",musique:"13p 7p 1p 2p",cote:"14"},
-{num:10,nom:"MUTANT KING",driver:"Barzalona M.",entraineur:"Graffard (S) FH.",musique:"2p 2p 9p 4p 5p",cote:"5"},
-{num:12,nom:"IL MAGISTERO",driver:"Provost D.",entraineur:"Cesandri (S) M.",musique:"1p 5p 1p 2p 1p 7p 8p 6p 4p",cote:"8"},
-{num:13,nom:"CITY SOLACE",driver:"Demuro C.",entraineur:"Murphy (S) A.",musique:"14p 3p 1p 4p 2p 6p 2p",cote:"9"},
-{num:14,nom:"BLANC CARAT",driver:"Soumillon C.",entraineur:"Sartori V.",musique:"1p 6p 3p 13p 8p 4p 4p",cote:"19"},
-{num:15,nom:"IKOTOFETSY",driver:"Mangione R.",entraineur:"Ratsimihah M.",musique:"11p 14p 9p 8p 5p 10p 6p 10p 3p 6p 4p 4p",cote:"69"},
-{num:16,nom:"FAOLIO",driver:"Hamelin A.",entraineur:"Prod'homme (S) D&P.",musique:"4p 3p 2p 1p 4p 5p 6p",cote:"7",statut:"2nd CHOIX",cls:"badge-second"}
-];
+var chevaux=[{num:1,nom:"HERCOLE DE BEA",driver:"Mottier M.",entraineur:"Roussel S.",musique:"8p 5p 4p 6p 7p 8p",cote:"30"},{num:2,nom:"HISCO DE PARNIERE",driver:"Gelormini A.",entraineur:"Gelormini B.",musique:"9p 7p 8p 5p 6p 9p",cote:"45"},{num:3,nom:"HANACK DE VIVON",driver:"Nivard F.",entraineur:"Nivard F.",musique:"1p 4p 7p 9p 1p 6p",cote:"45"},{num:4,nom:"HELALI DE MONTCEAU",driver:"Martin C.",entraineur:"Martin C.",musique:"10p 8p 9p 7p 8p 10p",cote:"60"},{num:5,nom:"HIGH TECH ROC",driver:"Poutrel J.",entraineur:"Poutrel J.",musique:"7p 6p 5p 8p 9p 7p",cote:"35"},{num:6,nom:"HEROS DHELPA",driver:"Ouvrie F.",entraineur:"Szirmay G.",musique:"2p 3p 4p 2p 5p 3p",cote:"12"},{num:7,nom:"HAPPY ATOUT",driver:"Verva P.",entraineur:"Verva P.",musique:"3p 4p 5p 3p 6p 4p",cote:"15"},{num:8,nom:"GITANO JACK",driver:"Barrier G.",entraineur:"Guelpa V.",musique:"1p 2p 8p 9p 1p 7p",cote:"10"},{num:9,nom:"HELLO DE LOIRON",driver:"Rochard B.",entraineur:"Mousseau T.",musique:"1p 2p 3p 1p 4p 2p",cote:"8"},{num:10,nom:"HERDUNO",driver:"Delacour B.",entraineur:"Poutrel J.",musique:"1p 1p 4p 5p 3p 2p",cote:"9"},{num:11,nom:"HORACE DARTHENAY",driver:"Mottier M.",entraineur:"Mottier G.",musique:"4p 4p 5p 6p 3p 5p",cote:"14"},{num:12,nom:"GENERAL DE CONNEE",driver:"Lagadeuc F.",entraineur:"Guarnieri M.",musique:"3p 5p 4p 7p 3p 6p",cote:"6"},{num:13,nom:"HALFAN SPEED",driver:"Raffin E.",entraineur:"Lelievre T.",musique:"3p 8p 7p 9p 5p 3p",cote:"7"},{num:14,nom:"GUILI GUILI",driver:"Thomain D.",entraineur:"Guelpa V.",musique:"5p 6p 4p 5p 7p 4p",cote:"18"},{num:15,nom:"HIRIUS DE GUEZ",driver:"Lebourgeois Y.",entraineur:"Guelpa V.",musique:"5p 5p 6p 7p 5p 5p",cote:"16"},{num:16,nom:"FOREVER DE PAME",driver:"Bovay G.",entraineur:"Bovay G.",musique:"1p 2p 3p 4p 2p 3p",cote:"20"},{num:17,nom:"HURLEVENT",driver:"Abrivard L.",entraineur:"Guelpa V.",musique:"6p 7p 8p 5p 9p 6p",cote:"25"},{num:18,nom:"GISARO",driver:"Baudouin L.",entraineur:"Baudouin F.",musique:"1p 3p 2p 1p 4p 1p",cote:"4",statut:"BASE",cls:"badge-base"}];
 
-var selection=[8,16,6,10,12,4,7,3];
-var top5=[8,16,6,10,12];
+var selection=[18,13,9,3,12,15,6,7];
+var top5=[18,13,9,3,12];
 
 function renderPartants(){
   var el=document.getElementById('partants-tbody');
@@ -334,7 +318,7 @@ function renderPartants(){
   var h='';
   for(var i=0;i<chevaux.length;i++){
     var c=chevaux[i];
-    h+='<tr><td'+(c.num===8?' style="font-weight:700;color:#15803d"':'')+'>'+(c.num)+'</td>';
+    h+='<tr><td'+(c.num===18?' style="font-weight:700;color:#15803d"':'')+'>'+(c.num)+'</td>';
     h+='<td'+(selection.indexOf(c.num)!==-1?' style="color:#15803d;font-weight:500"':'')+'>'+c.nom+'</td>';
     h+='<td>'+c.driver+'</td><td>'+c.entraineur+'</td><td>'+c.cote+'</td>';
     h+='<td>'+(c.statut?'<span class="'+c.cls+'">'+c.statut+'</span>':'&#8212;')+'</td></tr>';
@@ -408,7 +392,7 @@ var BLOG_POSTS=[
 {title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide m&#233;thodologique pour analyser un quint&#233; comme un expert."},
 {title:"Pronostic Quint&#233; - Prix Communaut&#233; de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaut&#233; de Bruxelles."},
 {title:"Pronostic Quint&#233; - Prix d'Ancenis",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quint&#233; du jour : Prix d'Ancenis."}
-];
+,{title:"Pronostic Quint&#233; Vincennes 25 Septembre 2026 - Prix Austria",date:"2026-09-25",slug:"pronostic-quinte-vincennes-25-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du soir : Prix Austria &#224; Vincennes. Gisaro en base, Halfan Speed et Hello de Loiron en confirmation."},];
 
 function renderBlogPosts(){
   var el=document.querySelector('.blogger-section');
