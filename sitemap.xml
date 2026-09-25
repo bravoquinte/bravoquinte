@@ -16,47 +16,79 @@
     <lastmod>2026-09-25T08:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo4.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-vincennes-25-septembre.html</loc>
     <lastmod>2026-09-24T08:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo3.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-compiegne-24-septembre.html</loc>
     <lastmod>2026-09-23T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-3.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/grand-national-du-trot-argentan.html</loc>
     <lastmod>2026-09-22T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-4.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/prix-calabrais-auteuil-22-septembre.html</loc>
     <lastmod>2026-09-22T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo8.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/quint-analyse-expert-comment-lire-une.html</loc>
     <lastmod>2026-09-22T08:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-1.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-communaute-de.html</loc>
     <lastmod>2026-09-20T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-5.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-dancenis-du-20.html</loc>
     <lastmod>2026-09-20T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo6.png</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
+    </image:image>
   </url>
 </urlset>

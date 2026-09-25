@@ -79,6 +79,7 @@ tr:hover td{background:#f0fdf4}
 .footer-bottom{border-top:1px solid #1e293b;padding-top:2rem;text-align:center;font-size:.875rem}
 .blogger-section{max-width:900px;margin:0 auto;padding:1rem 0 4rem}
 .blogger-section .bravo-post{padding:2rem 0;border-bottom:1px solid var(--border)}
+.blogger-section .bravo-post .post-img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border);margin-bottom:1rem;cursor:pointer}
 .blogger-section .bravo-post:first-child{padding-top:0}
 .blogger-section .post-title{font-family:'Space Grotesk',sans-serif;color:var(--dark);margin:0 0 .25rem}
 .blogger-section h1.post-title{font-size:2.25rem;line-height:1.2}
@@ -388,14 +389,14 @@ function renderPricing(){
 function fmtDate(iso){if(!iso)return'';try{return new Date(iso).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'});}catch(e){return iso;}}
 
 var BLOG_POSTS=[
-{title:"Pronostic Quint&#233; Auteuil 26 Septembre 2026 - Prix Grandlieu",date:"2026-09-26",slug:"pronostic-quinte-auteuil-26-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; de samedi : Prix Grandlieu &#224; Auteuil. The Must en base, Blue Borana en confirmation."},
-{title:"Pronostic Quint&#233; Vincennes 25 Septembre 2026 - Prix Austria",date:"2026-09-25",slug:"pronostic-quinte-vincennes-25-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du soir : Prix Austria &#224; Vincennes. Gisaro en base, Halfan Speed et Hello de Loiron en confirmation."},
-{title:"Pronostic Quint&#233; Compi&#232;gne 24 Septembre 2026",date:"2026-09-23",slug:"pronostic-quinte-compiegne-24-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du jour : Prix de la Basse Automne. S&#233;lection de 8 chevaux, top 5 et tickets."},
-{title:"Grand National du Trot - Argentan",date:"2026-09-22",slug:"grand-national-du-trot-argentan",excerpt:"Analyse du Grand National du Trot disput&#233; &#224; Argentan. S&#233;lection compl&#232;te avec partants et pronostics."},
-{title:"Prix Calabrais - Auteuil",date:"2026-09-22",slug:"prix-calabrais-auteuil-22-septembre",excerpt:"Notre analyse du Prix Calabrais &#224; Auteuil. Course de haies avec plateau relev&#233;."},
-{title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide m&#233;thodologique pour analyser un quint&#233; comme un expert."},
-{title:"Pronostic Quint&#233; - Prix Communaut&#233; de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaut&#233; de Bruxelles."},
-{title:"Pronostic Quint&#233; - Prix d'Ancenis",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quint&#233; du jour : Prix d'Ancenis."}
+{title:"Pronostic Quint&#233; Auteuil 26 Septembre 2026 - Prix Grandlieu",date:"2026-09-26",slug:"pronostic-quinte-auteuil-26-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; de samedi : Prix Grandlieu &#224; Auteuil. The Must en base, Blue Borana en confirmation.",img:"images/photo4.png"},
+{title:"Pronostic Quint&#233; Vincennes 25 Septembre 2026 - Prix Austria",date:"2026-09-25",slug:"pronostic-quinte-vincennes-25-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du soir : Prix Austria &#224; Vincennes. Gisaro en base, Halfan Speed et Hello de Loiron en confirmation.",img:"images/photo3.png"},
+{title:"Pronostic Quint&#233; Compi&#232;gne 24 Septembre 2026",date:"2026-09-23",slug:"pronostic-quinte-compiegne-24-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du jour : Prix de la Basse Automne. S&#233;lection de 8 chevaux, top 5 et tickets.",img:"images/rending-3.png"},
+{title:"Grand National du Trot - Argentan",date:"2026-09-22",slug:"grand-national-du-trot-argentan",excerpt:"Analyse du Grand National du Trot disput&#233; &#224; Argentan. S&#233;lection compl&#232;te avec partants et pronostics.",img:"images/rending-4.png"},
+{title:"Prix Calabrais - Auteuil",date:"2026-09-22",slug:"prix-calabrais-auteuil-22-septembre",excerpt:"Notre analyse du Prix Calabrais &#224; Auteuil. Course de haies avec plateau relev&#233;.",img:"images/photo8.png"},
+{title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide m&#233;thodologique pour analyser un quint&#233; comme un expert.",img:"images/rending-1.png"},
+{title:"Pronostic Quint&#233; - Prix Communaut&#233; de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaut&#233; de Bruxelles.",img:"images/rending-5.png"},
+{title:"Pronostic Quint&#233; - Prix d'Ancenis",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quint&#233; du jour : Prix d'Ancenis.",img:"images/photo6.png"}
 ];
 
 function renderBlogPosts(){
@@ -405,6 +406,7 @@ function renderBlogPosts(){
   for(var k=0;k<BLOG_POSTS.length;k++){
     var p=BLOG_POSTS[k];
     out+='<article class="bravo-post">';
+    if(p.img)out+='<img src="'+p.img+'" alt="'+p.title.replace(/"/g,'')+'" loading="lazy" class="post-img">';
     out+='<h2 class="post-title">'+p.title+'</h2>';
     out+='<p class="post-meta">Publi&#233; le '+fmtDate(p.date)+'</p>';
     out+='<div class="post-content"><p>'+p.excerpt+'</p></div>';
