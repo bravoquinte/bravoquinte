@@ -9,3 +9,4 @@ pronostic-quinte-vincennes-25-septembre.html	photo3.png
 quint-analyse-expert-comment-lire-une.html	rending-1.png
 pronostic-quinte-vincennes-27-septembre.html	rendering-7.png
 pronostic-quinte-enghien-28-septembre.html	photo9.png
+comment-analyser-course-hippique.html	rendering-9.png
