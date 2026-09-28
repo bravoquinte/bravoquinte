@@ -3,13 +3,19 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/</loc>
-    <lastmod>2026-09-28T08:00:00+00:00</lastmod>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://img.youtube.com/vi/csOxDsQcibw/maxresdefault.jpg</image:loc>
-      <image:title>Bravo Quint&#233; - Pronostic du jour</image:title>
+      <image:loc>https://img.youtube.com/vi/F4uXtLjHY2Y/maxresdefault.jpg</image:loc>
+      <image:title>Bravo Quint&#233;</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-chantilly-29-septembre.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-enghien-28-septembre.html</loc>
