@@ -19,8 +19,10 @@
 {"@context":"https://schema.org","@type":"WebSite","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","description":"Pronostics hippiques gratuits avec une approche méthodologique"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","logo":"https://bravoquinte.github.io/bravoquinte/images/rending-10.png","sameAs":["https://www.youtube.com/channel/bravoquinte"]}
+{"@context":"https://schema.org","@type":"Organization","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","logo":"https://bravoquinte.github.io/bravoquinte/images/logo.png","sameAs":["https://www.youtube.com/channel/bravoquinte"]}
 </script>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+<link rel='apple-touch-icon' href='images/favicon.png'/>
 <style id='page-skin-1' type='text/css'><!--
 :root{--nav-height:72px;--primary:#16a34a;--primary-dark:#15803d;--secondary:#d97706;--dark:#0f172a;--gray:#64748b;--border:#e2e8f0}
 *{box-sizing:border-box}
@@ -149,7 +151,7 @@ tr:hover td{background:#f0fdf4}
 </div>
 <div class='hero-media'>
 <a href='https://youtu.be/F4uXtLjHY2Y' rel='noopener noreferrer' style='display:block;position:relative;padding-bottom:56.25%;background:#000;border-radius:8px;overflow:hidden;' target='_blank'>
-<img alt='Vidéo du jour' src='https://img.youtube.com/vi/F4uXtLjHY2Y/maxresdefault.jpg' style='position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;'/>
+<img alt='Vidéo du jour' src='images/video-hero.jpg' width='1280' height='720' loading='eager' fetchpriority='high' style='position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;'/>
 <div style='position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;background:rgba(255,0,0,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;'>
 <svg fill='white' height='28' viewBox='0 0 24 24' width='28'><polygon points='5,3 19,12 5,21'></polygon></svg>
 </div>
@@ -427,19 +429,19 @@ function renderPricing(){
 function fmtDate(iso){if(!iso)return'';try{return new Date(iso).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'});}catch(e){return iso;}}
 
 var BLOG_POSTS=[
-{title:"Pronostic Quinté Chantilly 29 septembre 2026 - Prix de la Chambre du Duc",date:"2026-09-29",slug:"pronostic-quinte-chantilly-29-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de la Chambre du Duc à Chantilly.",img:"images/rending-10.png"},
-{title:"Pronostic Quint&#233; Enghien 28 septembre 2026 - Prix de Saint-Chamond",date:"2026-09-28",slug:"pronostic-quinte-enghien-28-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de Saint-Chamond à Enghien.",img:"images/photo9.png"},
-{title:"Comment analyser une course hippique : guide complet",date:"2026-09-27",slug:"comment-analyser-course-hippique",excerpt:"Guide pratique pour analyser une course hippique comme un expert : crit&#232;res de s&#233;lection, lecture des partants, gestion de bankroll et strat&#233;gie de pari.",img:"images/rending-9.png"},
-{title:"Pronostic Quint&#233; Vincennes 27 Septembre 2026 - Grand Prix du Portugal",date:"2026-09-27",slug:"pronostic-quinte-vincennes-27-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du dimanche : Grand Prix du Portugal &#224; Vincennes. Jet Express en base, Iron du Gers et Dayak en confirmation.",img:"images/rending-7.png"},
-{title:"Comment gagner au Quint&#233;+ : M&#233;thode compl&#232;te et analyse",date:"2026-09-25",slug:"comment-gagner-quinte-methode-analyse",excerpt:"Guide complet pour gagner au Quint&#233;+ PMU : m&#233;thode d'analyse, gestion de bankroll, s&#233;lection de chevaux et tickets adapt&#233;s &#224; chaque budget.",img:"images/rending-12.png"},
-{title:"Pronostic Quint&#233; Auteuil 26 Septembre 2026 - Prix Grandlieu",date:"2026-09-26",slug:"pronostic-quinte-auteuil-26-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; de samedi : Prix Grandlieu &#224; Auteuil. The Must en base, Blue Borana en confirmation.",img:"images/photo4.png"},
-{title:"Pronostic Quint&#233; Vincennes 25 Septembre 2026 - Prix Austria",date:"2026-09-25",slug:"pronostic-quinte-vincennes-25-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du soir : Prix Austria &#224; Vincennes. Gisaro en base, Halfan Speed et Hello de Loiron en confirmation.",img:"images/photo3.png"},
-{title:"Pronostic Quint&#233; Compi&#232;gne 24 Septembre 2026",date:"2026-09-23",slug:"pronostic-quinte-compiegne-24-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du jour : Prix de la Basse Automne. S&#233;lection de 8 chevaux, top 5 et tickets.",img:"images/rending-3.png"},
-{title:"Grand National du Trot - Argentan",date:"2026-09-22",slug:"grand-national-du-trot-argentan",excerpt:"Analyse du Grand National du Trot disput&#233; &#224; Argentan. S&#233;lection compl&#232;te avec partants et pronostics.",img:"images/rending-4.png"},
-{title:"Prix Calabrais - Auteuil",date:"2026-09-22",slug:"prix-calabrais-auteuil-22-septembre",excerpt:"Notre analyse du Prix Calabrais &#224; Auteuil. Course de haies avec plateau relev&#233;.",img:"images/photo8.png"},
-{title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide m&#233;thodologique pour analyser un quint&#233; comme un expert.",img:"images/rending-1.png"},
-{title:"Pronostic Quint&#233; - Prix Communaut&#233; de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaut&#233; de Bruxelles.",img:"images/rending-5.png"},
-{title:"Pronostic Quint&#233; - Prix d'Ancenis",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quint&#233; du jour : Prix d'Ancenis.",img:"images/photo6.png"}
+{title:"Pronostic Quinté Chantilly 29 septembre 2026 - Prix de la Chambre du Duc",date:"2026-09-29",slug:"pronostic-quinte-chantilly-29-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de la Chambre du Duc à Chantilly.",img:"images/rending-10.webp"},
+{title:"Pronostic Quint&#233; Enghien 28 septembre 2026 - Prix de Saint-Chamond",date:"2026-09-28",slug:"pronostic-quinte-enghien-28-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de Saint-Chamond à Enghien.",img:"images/photo9.webp"},
+{title:"Comment analyser une course hippique : guide complet",date:"2026-09-27",slug:"comment-analyser-course-hippique",excerpt:"Guide pratique pour analyser une course hippique comme un expert : crit&#232;res de s&#233;lection, lecture des partants, gestion de bankroll et strat&#233;gie de pari.",img:"images/rending-9.webp"},
+{title:"Pronostic Quint&#233; Vincennes 27 Septembre 2026 - Grand Prix du Portugal",date:"2026-09-27",slug:"pronostic-quinte-vincennes-27-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du dimanche : Grand Prix du Portugal &#224; Vincennes. Jet Express en base, Iron du Gers et Dayak en confirmation.",img:"images/rending-7.webp"},
+{title:"Comment gagner au Quint&#233;+ : M&#233;thode compl&#232;te et analyse",date:"2026-09-25",slug:"comment-gagner-quinte-methode-analyse",excerpt:"Guide complet pour gagner au Quint&#233;+ PMU : m&#233;thode d'analyse, gestion de bankroll, s&#233;lection de chevaux et tickets adapt&#233;s &#224; chaque budget.",img:"images/rending-12.webp"},
+{title:"Pronostic Quint&#233; Auteuil 26 Septembre 2026 - Prix Grandlieu",date:"2026-09-26",slug:"pronostic-quinte-auteuil-26-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; de samedi : Prix Grandlieu &#224; Auteuil. The Must en base, Blue Borana en confirmation.",img:"images/photo4.webp"},
+{title:"Pronostic Quint&#233; Vincennes 25 Septembre 2026 - Prix Austria",date:"2026-09-25",slug:"pronostic-quinte-vincennes-25-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du soir : Prix Austria &#224; Vincennes. Gisaro en base, Halfan Speed et Hello de Loiron en confirmation.",img:"images/photo3.webp"},
+{title:"Pronostic Quint&#233; Compi&#232;gne 24 Septembre 2026",date:"2026-09-23",slug:"pronostic-quinte-compiegne-24-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du jour : Prix de la Basse Automne. S&#233;lection de 8 chevaux, top 5 et tickets.",img:"images/rending-3.webp"},
+{title:"Grand National du Trot - Argentan",date:"2026-09-22",slug:"grand-national-du-trot-argentan",excerpt:"Analyse du Grand National du Trot disput&#233; &#224; Argentan. S&#233;lection compl&#232;te avec partants et pronostics.",img:"images/rending-4.webp"},
+{title:"Prix Calabrais - Auteuil",date:"2026-09-22",slug:"prix-calabrais-auteuil-22-septembre",excerpt:"Notre analyse du Prix Calabrais &#224; Auteuil. Course de haies avec plateau relev&#233;.",img:"images/photo8.webp"},
+{title:"Quinte Analyse Expert : comment lire une course",date:"2026-09-22",slug:"quint-analyse-expert-comment-lire-une",excerpt:"Guide m&#233;thodologique pour analyser un quint&#233; comme un expert.",img:"images/rending-1.webp"},
+{title:"Pronostic Quint&#233; - Prix Communaut&#233; de Bruxelles",date:"2026-09-20",slug:"pronostic-quinte-prix-communaute-de",excerpt:"Pronostic complet pour le Prix Communaut&#233; de Bruxelles.",img:"images/rending-5.webp"},
+{title:"Pronostic Quint&#233; - Prix d'Ancenis",date:"2026-09-20",slug:"pronostic-quinte-prix-dancenis-du-20",excerpt:"Analyse du Quint&#233; du jour : Prix d'Ancenis.",img:"images/photo6.webp"}
 ];
 
 function renderBlogPosts(){
