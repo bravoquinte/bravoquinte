@@ -33,16 +33,22 @@ def update_index_html(repo, a):
     c = re.sub(r'c\.num===\d+', f'c.num==={a.base}', c)
 
     # quinté section title
-    c = re.sub(r'[\w\s]+—\s*Quinté\+', f'{a.course} &#8212; Quinté+', c)
+    c = re.sub(r"<h1 class='font-display'[^>]*>[^<]*&#8212; Quinté\+</h1>",
+               f"<h1 class='font-display' style='font-size:2.5rem;color:#0f172a;margin:0 0 .5rem;'>{a.course} &#8212; Quinté+</h1>", c)
+    c = re.sub(r"<h1 class='font-display'[^>]*>Pronostic Quinté.*?</h1>",
+               f"<h1 class='font-display' style='font-size:2.5rem;margin:0 0 1rem;'>Pronostic Quinté {a.hippo} {a.date_disp}</h1>", c)
     # description
-    c = re.sub(r'(?:Vincennes|Enghien|Compiègne|Auteuil|Chantilly)[^<]*Corde à gauche[^<]*partants',
-               f'{a.hippo} &#8226; {a.discipline} &#8226; {a.dist} &#8226; Corde &#8226; {a.partants} partants', c)
-    # KPI
-    c = re.sub(r"<p class='kpi-value'>[^<]*</p>\s*</div>\s*<div class='kpi-item'><p class='kpi-label'>Discipline</p>\s*<p class='kpi-value'>[^<]*</p>",
-               f"<p class='kpi-value'>{a.hippo}</p></div><div class='kpi-item'><p class='kpi-label'>Discipline</p><p class='kpi-value'>{a.discipline}</p>", c)
-    c = re.sub(r"<p class='kpi-value'>\d+\s*m</p>\s*</div>\s*<div class='kpi-item'><p class='kpi-label'>Partants</p>\s*<p class='kpi-value'>\d+\s*partants</p>",
-               f"<p class='kpi-value'>{a.dist}</p></div><div class='kpi-item'><p class='kpi-label'>Partants</p><p class='kpi-value'>{a.partants} partants</p>", c)
-    c = re.sub(r"<p class='kpi-value'>\d[\d\s]*&#8364;</p>", f"<p class='kpi-value'>{a.dotation} &#8364;</p>", c)
+    c = re.sub(r"<p style='color:#475569;margin:0 0 2rem;'>[^<]*&#8226;[^<]*</p>",
+               f"<p style='color:#475569;margin:0 0 2rem;'>{a.hippo} &#8226; {a.discipline} &#8226; {a.dist} &#8226; Corde à droite &#8226; {a.partants} partants</p>", c)
+    # KPI cards (kpi-card structure)
+    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Hippodrome</p><p class='kpi-value'>)[^<]*(</p></div>)",
+               f"\\1{a.hippo}\\2", c)
+    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Type</p><p class='kpi-value'>)[^<]*(</p></div>)",
+               f"\\1{a.discipline}\\2", c)
+    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Distance</p><p class='kpi-value'>)[^<]*(</p></div>)",
+               f"\\1{a.dist}\\2", c)
+    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Allocation</p><p class='kpi-value'>)[^<]*(</p></div>)",
+               f"\\1{a.dotation} &#8364;\\2", c)
 
     # static fallback: partants table
     rows = []
@@ -123,6 +129,41 @@ def create_article(repo, a, date_disp):
     with open(os.path.join(repo, f'{a.slug}.html'), 'w', encoding='utf-8', newline='') as fh: fh.write(html)
     print(f"  article: {a.slug}.html")
 
+def integrity_check(a):
+    """Valide la cohérence des données avant publication (audit C1/C3/C4)."""
+    ch = load_chevaux(a.chevaux)
+    nums = sorted(int(k) for k in ch)
+    sel = [int(x) for x in a.selection.split(',')]
+    top = [int(x) for x in a.top5.split(',')]
+
+    errors = []
+    if a.partants != len(nums):
+        errors.append(f"partants annoncés {a.partants} != {len(nums)} chevaux fournis")
+    for s in sel + top:
+        if not any(n == s for n in nums):
+            errors.append(f"numéro {s} dans sélection/top5 absent des chevaux")
+    if not any(n == a.base for n in nums):
+        errors.append(f"base {a.base} absente des chevaux")
+    else:
+        base_name = ch.get(str(a.base), {}).get('nom', '?')
+        print(f"  base: {a.base} ({base_name})")
+
+    # contrôle doublons dans chaque liste séparément (top5 ⊂ selection est normal)
+    seen_sel = set()
+    for s in sel:
+        if s in seen_sel:
+            errors.append(f"doublon numéro {s} dans la selection")
+        seen_sel.add(s)
+    seen_top = set()
+    for s in top:
+        if s in seen_top:
+            errors.append(f"doublon numéro {s} dans le top5")
+        seen_top.add(s)
+
+    if errors:
+        raise SystemExit("ERREUR INTÉGRITÉ:\n  - " + "\n  - ".join(errors))
+    print(f"  intégrité OK: {len(nums)} partants, sélection {len(sel)}, top5 {len(top)}")
+
 def update_blog_posts(repo, a, date_disp):
     fp = os.path.join(repo, 'index.html')
     with open(fp, encoding='utf-8') as fh: c = fh.read()
@@ -175,10 +216,12 @@ def main():
     months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
     dt = datetime.strptime(a.date, '%Y-%m-%d')
     date_disp = f"{dt.day} {months[dt.month-1]} {dt.year}"
+    a.date_disp = date_disp
 
     print(f"\n=== Quinté {date_disp} — {a.course} ({a.hippo}) ===")
     print(f"Base: {a.base} | Sélection: {a.selection} | Top 5: {a.top5}\n")
 
+    integrity_check(a)
     update_index_html(a.repo, a)
     create_article(a.repo, a, date_disp)
     update_blog_posts(a.repo, a, date_disp)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml'>
+<html class='v2' dir='ltr' lang='fr' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
 
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
@@ -7,7 +7,7 @@
 <link href='index.html' rel='canonical'/>
 
 <meta content='Pronostics Quinté du jour : partants, analyses, sélections et tickets pour toutes les courses hippiques françaises.' name='description'/>
-<meta content='https://bravo.github.io/bravoquinte/' property='og:url'/>
+<meta content='https://bravoquinte.github.io/bravoquinte/' property='og:url'/>
 <meta content='Bravo Quinté' property='og:title'/>
 <meta content='Pronostics Quinté du jour : partants, analyses, sélections et tickets pour toutes les courses hippiques françaises.' property='og:description'/>
 <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-PD9CES68Q0'></script>
@@ -16,7 +16,7 @@
 <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","description":"Pronostics hippiques gratuits avec une approche méthodologique","potentialAction":{"@type":"SearchAction","target":"https://bravoquinte.github.io/bravoquinte/?q={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","description":"Pronostics hippiques gratuits avec une approche méthodologique"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Bravo Quinté","url":"https://bravoquinte.github.io/bravoquinte/","logo":"https://bravoquinte.github.io/bravoquinte/images/rending-10.png","sameAs":["https://www.youtube.com/channel/bravoquinte"]}
@@ -98,7 +98,14 @@ tr:hover td{background:#f0fdf4}
 .blogger-section .post-content p{margin:.75rem 0}
 .blogger-section .post-content ul,.blogger-section .post-content ol{padding-left:1.25rem;margin:.75rem 0}
 .blogger-section .post-content img{border-radius:12px}
-@media(max-width:768px){.nav-links{display:none}.hero h1{font-size:2.25rem}.hero p{font-size:1rem}}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:.5rem;flex-direction:column;gap:5px}
+.nav-toggle-bar{display:block;width:22px;height:2px;background:#0f172a;border-radius:1px}
+@media(max-width:768px){
+.nav-toggle{display:flex}
+.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1rem;box-shadow:0 8px 24px rgba(0,0,0,.08);border-top:1px solid var(--border)}
+.nav-links.open{display:flex}
+.hero h1{font-size:2.25rem}.hero p{font-size:1rem}
+}
 
 --></style>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
@@ -112,7 +119,8 @@ tr:hover td{background:#f0fdf4}
 <svg fill='none' height='32' viewBox='0 0 32 32' width='32'><circle cx='16' cy='16' r='14' stroke='currentColor' stroke-width='2'></circle><path d='M16 6v12M10 16h12' stroke='currentColor' stroke-linecap='round' stroke-width='2.5'></path><circle cx='16' cy='16' fill='currentColor' r='6'></circle></svg>
 <span>Bravo Quinte</span>
 </a>
-<div class='nav-links'>
+<button class='nav-toggle' aria-label='Menu' aria-expanded='false' aria-controls='nav-links-menu'><span class='nav-toggle-bar'></span><span class='nav-toggle-bar'></span><span class='nav-toggle-bar'></span></button>
+<div class='nav-links' id='nav-links-menu'>
 <a class='nav-link' data-page='accueil' href='#accueil'>Accueil</a>
 <a class='nav-link' data-page='quinte-du-jour' href='#quinte-du-jour'>Quinté du jour</a>
 <a class='nav-link' data-page='archives' href='#archives'>Archives</a>
@@ -158,23 +166,23 @@ tr:hover td{background:#f0fdf4}
 <a data-page='accueil' href='#accueil'>Accueil</a><span>&#8250;</span>
 <span style='color:#0f172a;font-weight:500;'>Quinté du jour</span>
 </nav>
-<h1 class='font-display' style='font-size:2.5rem;color:#0f172a;margin:0 0 .5rem;'>Prix de Saint-Chamond &#8212; Quinté+</h1>
-<p style='color:#475569;margin:0 0 2rem;'>Chantilly &#8226; Galop Plat &#8226; 1900m &#8226; Corde &#8226; 16 partants</p>
+<h1 class='font-display' style='font-size:2.5rem;color:#0f172a;margin:0 0 .5rem;'>Prix de la Chambre du Duc &#8212; Quinté+</h1>
+<p style='color:#475569;margin:0 0 2rem;'>Chantilly &#8226; Galop Plat &#8226; 1900m &#8226; Corde à droite &#8226; 16 partants</p>
 <div class='grid-4' style='margin-bottom:3rem;'>
-<div class='kpi-card'><p class='kpi-label'>Hippodrome</p><p class='kpi-value'>Enghien</p></div>
-<div class='kpi-card'><p class='kpi-label'>Type</p><p class='kpi-value'>Trot Attelé</p></div>
-<div class='kpi-card'><p class='kpi-label'>Distance</p><p class='kpi-value'>2150 m</p></div>
+<div class='kpi-card'><p class='kpi-label'>Hippodrome</p><p class='kpi-value'>Chantilly</p></div>
+<div class='kpi-card'><p class='kpi-label'>Type</p><p class='kpi-value'>Handicap Classe 2</p></div>
+<div class='kpi-card'><p class='kpi-label'>Distance</p><p class='kpi-value'>1900 m</p></div>
 <div class='kpi-card'><p class='kpi-label'>Allocation</p><p class='kpi-value'>50 900 &#8364;</p></div>
 </div>
 <section style='margin-bottom:3rem;'>
 <h2 class='font-display' style='font-size:1.75rem;margin:0 0 1rem;'>Analyse du scénario</h2>
 <div class='card' style='background:#f8fafc;'>
-<h3>Handicap divisé réservé aux 3 ans</h3>
-<p>Quinze trotteurs attelés sur 2700 mètres de cendrée à Vincennes, corde à gauche, après le forfait de Caudry (11). Un handicap divisé pour les seuls 3 ans, avec 52 800 euros à partager et un terrain annoncé bon, lice à zéro. Quelques kilos séparent le sommet du tableau du reste du peloton, et la position pendant le parcours comptera énormément. <strong>VICTORY PACE (8)</strong>, notre base du jour, montée par Alexis Pouchin pour Gérard Mossé, a déjà prouvé sa compétitivité dans les gros handicaps et n&#8217;a jamais déçu à Compiègne.</p>
+<h3>Un handicap de classe 2 très ouvert</h3>
+<p>Seize galopeurs s'élancent sur 1900 mètres de sable fibre, corde à droite, pour 50 900 euros. La première épreuve de la réunion 1 s'annonce incertaine, et c'est justement ce qui rend ce Quinté intéressant. Un handicap divisé de classe 2, réservé aux quatre ans et plus, avec des poids allant de 53 à 60 kilos : chaque kilo compte sur cette distance. <strong>ZELORO (2)</strong>, notre base du jour, monté par Maxime Guyon pour Philippe et Jean Brandt, a été deuxième ici-même le mois dernier dans un lot similaire et reste compétitif à cette valeur de 60 kilos.</p>
 </div>
 </section>
 <section style='margin-bottom:3rem;'>
-<h2 class='font-display' style='font-size:1.75rem;margin:0 0 1rem;'>Les 15 partants</h2>
+<h2 class='font-display' style='font-size:1.75rem;margin:0 0 1rem;'>Les 16 partants</h2>
 <div class='table-wrap'>
 <table>
 <thead><tr><th>N&#176;</th><th>Cheval</th><th>Jockey</th><th>Entraîneur</th><th>Cote</th><th>Statut</th></tr></thead>
@@ -229,7 +237,7 @@ tr:hover td{background:#f0fdf4}
 <div class='ticket-header' style='background:#22c55e;'><h3>Petit budget</h3><p style='margin:0;font-size:.875rem;'>~15 &#8364;</p></div>
 <div class='ticket-body'>
 <div class='ticket-line'><h4>Quinté+ (1 &#8364;)</h4><code>2 — 4 — 6</code></div>
-<div class='ticket-line'><h4>Couplé Placé (2 &#8364;)</h4><code>10 / 14 - 4 - 1</code></div>
+<div class='ticket-line'><h4>Couplé Placé (2 &#8364;)</h4><code>2 / 4 - 6 - 1</code></div>
 <p style='font-weight:600;margin:1rem 0 0;'>Total : <span style='color:#22c55e;'>15 &#8364;</span></p>
 </div>
 </article>
@@ -237,15 +245,15 @@ tr:hover td{background:#f0fdf4}
 <div class='ticket-header' style='background:#f59e0b;'><h3>Budget moyen</h3><p style='margin:0;font-size:.875rem;'>~67 &#8364;</p></div>
 <div class='ticket-body'>
 <div class='ticket-line'><h4>Champ total</h4><code>Base 2 / 2,4,6,1,12,9,3,7</code></div>
-<div class='ticket-line'><h4>Couplé Ordre (3 &#8364;)</h4><code>11 / 2 - 13 - 6 - 4</code></div>
+<div class='ticket-line'><h4>Couplé Ordre (3 &#8364;)</h4><code>2 / 4 - 6 - 1 - 12</code></div>
 <p style='font-weight:600;margin:1rem 0 0;'>Total : <span style='color:#f59e0b;'>~67 &#8364;</span></p>
 </div>
 </article>
 <article class='ticket-card' style='border-color:#3b82f6;'>
 <div class='ticket-header' style='background:#3b82f6;'><h3>Ambitieux</h3><p style='margin:0;font-size:.875rem;'>~120-400 &#8364;</p></div>
 <div class='ticket-body'>
-<div class='ticket-line'><h4>Champ réduit (6 &#8364;)</h4><code>11 / 2-13-6-4-10-1-12</code></div>
-<div class='ticket-line'><h4>Multi 4/5/6 (3 &#8364;)</h4><code>10-14-4-1-15-12-11-2</code></div>
+<div class='ticket-line'><h4>Champ réduit (6 &#8364;)</h4><code>2 / 4-6-1-12-9-3-7</code></div>
+<div class='ticket-line'><h4>Multi 4/5/6 (3 &#8364;)</h4><code>2-4-6-1-12-9-3-7</code></div>
 <p style='font-weight:600;margin:1rem 0 0;'>Total : <span style='color:#3b82f6;'>~120-400 &#8364;</span></p>
 </div>
 </article>
@@ -276,6 +284,19 @@ tr:hover td{background:#f0fdf4}
 <p style='color:#475569;margin:0 0 3rem;'>Méthodologie, gestion de bankroll, lecture de course.</p>
 <div class='blogger-section'>
 <div class='no-items section' id='blog-posts'></div>
+<noscript>
+<ul style='padding-left:1.25rem;line-height:1.8'>
+<li><a href='pronostic-quinte-chantilly-29-septembre.html'>Pronostic Quinté Chantilly 29 septembre 2026 - Prix de la Chambre du Duc</a></li>
+<li><a href='pronostic-quinte-enghien-28-septembre.html'>Pronostic Quinté Enghien 28 septembre 2026 - Prix de Saint-Chamond</a></li>
+<li><a href='pronostic-quinte-vincennes-27-septembre.html'>Pronostic Quinté Vincennes 27 septembre 2026 - Grand Prix du Portugal</a></li>
+<li><a href='comment-analyser-course-hippique.html'>Comment analyser une course hippique : guide complet</a></li>
+<li><a href='comment-gagner-quinte-methode-analyse.html'>Comment gagner au Quinté+ : méthode et analyse</a></li>
+<li><a href='pronostic-quinte-auteuil-26-septembre.html'>Pronostic Quinté Auteuil 26 septembre 2026</a></li>
+<li><a href='pronostic-quinte-vincennes-25-septembre.html'>Pronostic Quinté Vincennes 25 septembre 2026</a></li>
+<li><a href='grand-national-du-trot-argentan.html'>Grand National du Trot - Argentan</a></li>
+<li><a href='prix-calabrais-auteuil-22-septembre.html'>Prix Calabrais - Auteuil 22 septembre</a></li>
+</ul>
+</noscript>
 </div>
 </div>
 </section>
@@ -409,7 +430,6 @@ var BLOG_POSTS=[
 {title:"Pronostic Quinté Chantilly 29 septembre 2026 - Prix de la Chambre du Duc",date:"2026-09-29",slug:"pronostic-quinte-chantilly-29-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de la Chambre du Duc à Chantilly.",img:"images/rending-10.png"},
 {title:"Pronostic Quint&#233; Enghien 28 septembre 2026 - Prix de Saint-Chamond",date:"2026-09-28",slug:"pronostic-quinte-enghien-28-septembre",excerpt:"Analyse complète du Quinté du jour : Prix de Saint-Chamond à Enghien.",img:"images/photo9.png"},
 {title:"Comment analyser une course hippique : guide complet",date:"2026-09-27",slug:"comment-analyser-course-hippique",excerpt:"Guide pratique pour analyser une course hippique comme un expert : crit&#232;res de s&#233;lection, lecture des partants, gestion de bankroll et strat&#233;gie de pari.",img:"images/rending-9.png"},
-{title:"Pronostic Quint&#233; Enghien 28 Septembre 2026 - Prix de Saint-Chamond",date:"2026-09-28",slug:"pronostic-quinte-enghien-28-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du lundi : Prix de Saint-Chamond &#224; Enghien. Jewel Touch en base, Jazz de Padd et Jos Maza en confirmation.",img:"images/photo9.png"},
 {title:"Pronostic Quint&#233; Vincennes 27 Septembre 2026 - Grand Prix du Portugal",date:"2026-09-27",slug:"pronostic-quinte-vincennes-27-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; du dimanche : Grand Prix du Portugal &#224; Vincennes. Jet Express en base, Iron du Gers et Dayak en confirmation.",img:"images/rending-7.png"},
 {title:"Comment gagner au Quint&#233;+ : M&#233;thode compl&#232;te et analyse",date:"2026-09-25",slug:"comment-gagner-quinte-methode-analyse",excerpt:"Guide complet pour gagner au Quint&#233;+ PMU : m&#233;thode d'analyse, gestion de bankroll, s&#233;lection de chevaux et tickets adapt&#233;s &#224; chaque budget.",img:"images/rending-12.png"},
 {title:"Pronostic Quint&#233; Auteuil 26 Septembre 2026 - Prix Grandlieu",date:"2026-09-26",slug:"pronostic-quinte-auteuil-26-septembre",excerpt:"Analyse compl&#232;te du Quint&#233; de samedi : Prix Grandlieu &#224; Auteuil. The Must en base, Blue Borana en confirmation.",img:"images/photo4.png"},
@@ -433,7 +453,7 @@ function renderBlogPosts(){
     out+='<h2 class="post-title">'+p.title+'</h2>';
     out+='<p class="post-meta">Publi&#233; le '+fmtDate(p.date)+'</p>';
     out+='<div class="post-content"><p>'+p.excerpt+'</p></div>';
-    out+='<button class="btn post-read-btn" data-idx="'+k+'">Lire l\'article &#8594;</button>';
+    out+='<a class="btn" href="'+p.slug+'.html">Lire l\'article &#8594;</a>';
     out+='</article>';
   }
   el.innerHTML=out||'<p>Aucun article.</p>';
@@ -483,14 +503,23 @@ function renderResultats(){
 
 document.addEventListener('click',function(ev){
   var t=ev.target;
-  if(t.classList&&t.classList.contains('post-read-btn')){var idx=parseInt(t.getAttribute('data-idx'),10);if(!isNaN(idx))showBlogPost(idx);}
   if(t.classList&&t.classList.contains('post-back-btn'))renderBlogPosts();
 });
 
 document.addEventListener('click',function(e){
   var el=e.target.closest('[data-page]');
-  if(el){e.preventDefault();navigate(el.getAttribute('data-page'));}
+  if(el){e.preventDefault();navigate(el.getAttribute('data-page'));var nav=document.getElementById('nav-links-menu');if(nav)nav.classList.remove('open');var tg=document.querySelector('.nav-toggle');if(tg)tg.setAttribute('aria-expanded','false');}
 });
+
+var navToggle=document.querySelector('.nav-toggle');
+if(navToggle){
+  navToggle.addEventListener('click',function(e){
+    e.stopPropagation();
+    var nav=document.getElementById('nav-links-menu');
+    var open=nav.classList.toggle('open');
+    this.setAttribute('aria-expanded',open?'true':'false');
+  });
+}
 
 function navigate(page){
   var pages=document.querySelectorAll('.page');
