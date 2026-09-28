@@ -1,0 +1,224 @@
+{
+  "generated": "2026-09-28T23:49:16.542366Z",
+  "stats": {
+    "total_validated": 3,
+    "base_in_top5_rate": "1/3",
+    "base_wins_rate": "0/3",
+    "selection_avg_in_top5": "3.3/5",
+    "exact_order_rate": "0/3"
+  },
+  "predictions": [
+    {
+      "date": "2026-09-24",
+      "hippo": "Compiègne",
+      "course": "Prix de la Basse Automne",
+      "discipline": "Galop Plat",
+      "dist": "2150m",
+      "slug": "pronostic-quinte-compiegne-24-septembre",
+      "selection": [
+        1,
+        4,
+        7,
+        2,
+        12,
+        14,
+        10,
+        11
+      ],
+      "base": 1,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
+    },
+    {
+      "date": "2026-09-25",
+      "hippo": "Vincennes",
+      "course": "Prix Austria",
+      "discipline": "Trot Attelé",
+      "dist": "2700m",
+      "slug": "pronostic-quinte-vincennes-25-septembre",
+      "selection": [
+        18,
+        13,
+        9,
+        3,
+        12,
+        15,
+        6,
+        7
+      ],
+      "base": 18,
+      "resultat": "13-11-12-10-15",
+      "arrivee": [
+        [
+          13,
+          "HALFAN SPEED"
+        ],
+        [
+          11,
+          "HORACE D'ARTHENAY"
+        ],
+        [
+          12,
+          "GENERAL DE CONNEE"
+        ],
+        [
+          10,
+          "HERDUNO"
+        ],
+        [
+          15,
+          "HIRIUS DE GUEZ"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": false,
+        "base_wins": false,
+        "selection_in_top5": 3,
+        "exact_order": false,
+        "top5": [
+          13,
+          11,
+          12,
+          10,
+          15
+        ],
+        "winner": 13
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "hippo": "Vincennes",
+      "course": "Grand Prix du Portugal",
+      "discipline": "Trot Attelé",
+      "dist": "2700m",
+      "slug": "pronostic-quinte-vincennes-27-septembre",
+      "selection": [
+        12,
+        11,
+        2,
+        3,
+        8,
+        4,
+        10,
+        14
+      ],
+      "base": 12,
+      "resultat": "8-12-14-10-9",
+      "arrivee": [
+        [
+          8,
+          "HOMARD LAND"
+        ],
+        [
+          12,
+          "JET EXPRESS"
+        ],
+        [
+          14,
+          "JAZZ DE PADD"
+        ],
+        [
+          10,
+          "JEWEL TOUCH"
+        ],
+        [
+          9,
+          "JONGLEUSE DE LUNE"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": true,
+        "base_wins": false,
+        "selection_in_top5": 4,
+        "exact_order": false,
+        "top5": [
+          8,
+          12,
+          14,
+          10,
+          9
+        ],
+        "winner": 8
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "hippo": "Enghien",
+      "course": "Prix de Saint-Chamond",
+      "discipline": "Trot Attelé",
+      "dist": "2700m",
+      "slug": "pronostic-quinte-enghien-28-septembre",
+      "selection": [
+        10,
+        14,
+        4,
+        1,
+        15,
+        12,
+        11,
+        2
+      ],
+      "base": 10,
+      "resultat": "15-4-14-5-7",
+      "arrivee": [
+        [
+          15,
+          "INTREPIDE DES BOIS"
+        ],
+        [
+          4,
+          "JOS MAZA"
+        ],
+        [
+          14,
+          "JAZZ DE PADD"
+        ],
+        [
+          5,
+          "HAPPY PACHA"
+        ],
+        [
+          7,
+          "IN LOVE REGLISSE"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": false,
+        "base_wins": false,
+        "selection_in_top5": 3,
+        "exact_order": false,
+        "top5": [
+          15,
+          4,
+          14,
+          5,
+          7
+        ],
+        "winner": 15
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "hippo": "Chantilly",
+      "course": "Prix de la Chambre du Duc",
+      "discipline": "Galop Plat",
+      "dist": "1900m",
+      "slug": "pronostic-quinte-chantilly-29-septembre",
+      "selection": [
+        2,
+        4,
+        6,
+        1,
+        12,
+        9,
+        3,
+        7
+      ],
+      "base": 2,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
+    }
+  ]
+}
