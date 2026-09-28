@@ -128,4 +128,36 @@
       <image:title>mentions-legales</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/archives.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
+      <image:title>archives</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/resultats.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
+      <image:title>resultats</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/offres.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/logo.png</image:loc>
+      <image:title>offres</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/apropos.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/logo.png</image:loc>
+      <image:title>apropos</image:title>
+    </image:image>
+  </url>
 </urlset>
