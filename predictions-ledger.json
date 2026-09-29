@@ -1,11 +1,11 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 3,
-    "base_in_top5_rate": "1/3",
-    "base_wins_rate": "0/3",
-    "selection_avg_in_top5": "3.3/5",
-    "exact_order_rate": "0/3"
+    "total_validated": 4,
+    "base_in_top5_rate": "2/4",
+    "base_wins_rate": "0/4",
+    "selection_avg_in_top5": "3.5/5",
+    "exact_order_rate": "0/4"
   },
   "predictions": [
     {
@@ -216,9 +216,43 @@
         7
       ],
       "base": 2,
-      "resultat": null,
-      "arrivee": null,
-      "metrics": null
+      "resultat": "1-9-15-2-4",
+      "arrivee": [
+        [
+          1,
+          "ANSSIO"
+        ],
+        [
+          9,
+          "PRESA DIRETTA"
+        ],
+        [
+          15,
+          "SPEEDY GREEN"
+        ],
+        [
+          2,
+          "ZELORO"
+        ],
+        [
+          4,
+          "CENTRAL PARK WEST"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": true,
+        "base_wins": false,
+        "selection_in_top5": 4,
+        "exact_order": false,
+        "top5": [
+          1,
+          9,
+          15,
+          2,
+          4
+        ],
+        "winner": 1
+      }
     }
   ]
 }

@@ -41,14 +41,10 @@ def update_index_html(repo, a):
     c = re.sub(r"<p style='color:#475569;margin:0 0 2rem;'>[^<]*&#8226;[^<]*</p>",
                f"<p style='color:#475569;margin:0 0 2rem;'>{a.hippo} &#8226; {a.discipline} &#8226; {a.dist} &#8226; Corde à droite &#8226; {a.partants} partants</p>", c)
     # KPI cards (kpi-card structure)
-    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Hippodrome</p><p class='kpi-value'>)[^<]*(</p></div>)",
-               f"\\1{a.hippo}\\2", c)
-    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Type</p><p class='kpi-value'>)[^<]*(</p></div>)",
-               f"\\1{a.discipline}\\2", c)
-    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Distance</p><p class='kpi-value'>)[^<]*(</p></div>)",
-               f"\\1{a.dist}\\2", c)
-    c = re.sub(r"(<div class='kpi-card'><p class='kpi-label'>Allocation</p><p class='kpi-value'>)[^<]*(</p></div>)",
-               f"\\1{a.dotation} &#8364;\\2", c)
+    for label, val in [('Hippodrome', a.hippo), ('Type', a.discipline), ('Distance', a.dist), ('Allocation', f'{a.dotation} &#8364;')]:
+        pat = f"<div class='kpi-card'><p class='kpi-label'>{label}</p><p class='kpi-value'>[^<]*</p></div>"
+        rep = f"<div class='kpi-card'><p class='kpi-label'>{label}</p><p class='kpi-value'>{val}</p></div>"
+        c = re.sub(pat, rep, c)
 
     # static fallback: partants table
     rows = []
