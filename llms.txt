@@ -1,0 +1,21 @@
+# Bravo Quinté — Pronostics hippiques du Quinté+
+
+> Site de pronostics gratuits pour le Quinté+ PMU. Analyses quotidiennes, sélections de 8 chevaux, tickets à 3 budgets (5€ / 15€ / 70€). Track record transparent.
+
+## Pages principales
+- Accueil : https://bravoquinte.github.io/bravoquinte/
+- Quinté du jour : https://bravoquinte.github.io/bravoquinte/ (onglet Quinté du jour)
+- Méthodologie : https://bravoquinte.github.io/bravoquinte/methodologie.html
+- Track Record : https://bravoquinte.github.io/bravoquinte/track-record.html
+- Archives : https://bravoquinte.github.io/bravoquinte/archives.html
+- Résultats : https://bravoquinte.github.io/bravoquinte/resultats.html
+- Mentions légales : https://bravoquinte.github.io/bravoquinte/mentions-legales.html
+
+## Flux RSS
+- https://bravoquinte.github.io/bravoquinte/feed.xml
+
+## Contact
+- Email : bravoquinte@gmail.com
+
+## Note
+Ce site utilise des pronostics à titre informatif uniquement. Le jeu comporte des risques.

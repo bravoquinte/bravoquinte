@@ -160,4 +160,12 @@
       <image:title>apropos</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/track-record.html</loc>
+    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
+      <image:title>Track Record — Transparence des pronostics</image:title>
+    </image:image>
+  </url>
 </urlset>
