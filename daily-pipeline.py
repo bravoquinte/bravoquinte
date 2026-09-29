@@ -46,13 +46,42 @@ def update_index_html(repo, a):
         rep = f"<div class='kpi-card'><p class='kpi-label'>{label}</p><p class='kpi-value'>{val}</p></div>"
         c = re.sub(pat, rep, c)
 
-    # static fallback: partants table
+    # scenario block (narration)
+    if getattr(a, 'narration', None) and '|' in a.narration:
+        title_n, body_n = a.narration.split('|', 1)
+        c = re.sub(r"<h3>[^<]*</h3>\s*<p>[^<]*(?:<strong>[^<]*</strong>[^<]*)*</p>",
+                   f"<h3>{title_n.strip()}</h3>\n<p>{body_n.strip()}</p>", c, count=1)
+
+    # static fallback: tickets cards
+    import math
+    sel = a.selection.split(',')
+    n = len(sel)
+    nb_comb = math.ceil(math.comb(n,4)/4) + math.ceil(math.comb(n,5)/5) + math.ceil(math.comb(n,6)/6)
+    multi_cost = nb_comb * 2
+    base_s = str(a.base)
+    pet = [base_s] + [x for x in sel[:3] if x != base_s][:2]
+    cp = ' / '.join(pet)
+    qj = ' — '.join(sel[:5])
+    # Petit budget
+    c = re.sub(r"<code>[^<]*</code>\s*<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>3 tickets[^<]*</p>",
+               f"<code>{cp}</code>\n<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>3 tickets &#215; 1,50 &#8364; = 4,50 &#8364;</p>", c, count=1)
+    # Budget moyen
+    c = re.sub(r"<div class='ticket-line'><h4>Quinté\+ simple</h4><code>[^<]*</code></div>\s*<div class='ticket-line'><h4>Couplé base</h4><code>[^<]*</code></div>",
+               f"<div class='ticket-line'><h4>Quinté+ simple</h4><code>{qj}</code></div>\n<div class='ticket-line'><h4>Couplé base</h4><code>{cp}</code></div>", c, count=1)
+    # Ambitieux
+    c = re.sub(r"<code>[^<]*</code>\s*<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>\d+ tickets[^<]*</p>",
+               f"<code>{' — '.join(sel)}</code>\n<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>{nb_comb} tickets &#215; 2 &#8364; &#8776; {multi_cost} &#8364;</p>", c, count=1)
     rows = []
     for num in sorted(int(k) for k in ch):
         h = ch[str(num)]
         st = f'<td><span class="{h["cls"]}">{h["statut"]}</span></td>' if h.get('statut') else '<td>&#8212;</td>'
         rows.append(f'<tr><td>{num}</td><td>{h["nom"]}</td><td>{h.get("driver","—")}</td><td>{h.get("entraineur","—")}</td><td>{h.get("cote","—")}</td>{st}</tr>')
     c = re.sub(r"<tbody id='partants-tbody'>.*?</tbody>", "<tbody id='partants-tbody'>\n" + '\n'.join(rows) + "\n</tbody>", c, flags=re.S)
+
+    # table header: Jockey vs Driver
+    driver_hdr = "Driver" if "Trot" in a.discipline else "Jockey"
+    c = re.sub(r"<th>Cheval</th><th>\w+</th><th>Entraîneur</th>",
+               f"<th>Cheval</th><th>{driver_hdr}</th><th>Entraîneur</th>", c)
 
     # static fallback: top5
     t5 = '\n'.join(f'<li><strong>{n}</strong> - {ch.get(n,ch.get(int(n),{})).get("nom","?")}</li>' for n in top)
@@ -247,6 +276,7 @@ def main():
     p.add_argument('--top5', required=True)
     p.add_argument('--base', required=True, type=int)
     p.add_argument('--rapports', default='https://www.pmu.fr/turf/')
+    p.add_argument('--narration', default=None, help='Titre + paragraphe du scenario (sep: |)')
     p.add_argument('--commit', action='store_true')
     # resultats du quinté precedent (optionnel)
     p.add_argument('--resultat', default=None, help='Arrivee du quinté precedent: 15-4-14-5-7')
