@@ -82,6 +82,8 @@ def update_index_html(repo, a):
     driver_hdr = "Driver" if "Trot" in a.discipline else "Jockey"
     c = re.sub(r"<th>Cheval</th><th>\w+</th><th>Entraîneur</th>",
                f"<th>Cheval</th><th>{driver_hdr}</th><th>Entraîneur</th>", c)
+    # partants section title
+    c = re.sub(r"Les \d+ partants", f"Les {a.partants} partants", c)
 
     # static fallback: top5
     t5 = '\n'.join(f'<li><strong>{n}</strong> - {ch.get(n,ch.get(int(n),{})).get("nom","?")}</li>' for n in top)
