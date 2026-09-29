@@ -63,14 +63,14 @@ def update_index_html(repo, a):
     cp = ' / '.join(pet)
     qj = ' — '.join(sel[:5])
     # Petit budget
-    c = re.sub(r"<code>[^<]*</code>\s*<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>3 tickets[^<]*</p>",
-               f"<code>{cp}</code>\n<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>3 tickets &#215; 1,50 &#8364; = 4,50 &#8364;</p>", c, count=1)
+    def fix_coupl(m): return f"{m.group(1)}{cp}{m.group(2)}"
+    c = re.sub(r"(<h4>Couplé placé</h4><code>)[^<]*(</code>)", fix_coupl, c, count=1)
     # Budget moyen
-    c = re.sub(r"<div class='ticket-line'><h4>Quinté\+ simple</h4><code>[^<]*</code></div>\s*<div class='ticket-line'><h4>Couplé base</h4><code>[^<]*</code></div>",
-               f"<div class='ticket-line'><h4>Quinté+ simple</h4><code>{qj}</code></div>\n<div class='ticket-line'><h4>Couplé base</h4><code>{cp}</code></div>", c, count=1)
+    def fix_moyen(m): return f"{m.group(1)}{qj}{m.group(2)}{cp}{m.group(3)}"
+    c = re.sub(r"(<div class='ticket-line'><h4>Quinté\+ simple</h4><code>)[^<]*(</code></div>\s*<div class='ticket-line'><h4>Couplé base</h4><code>)[^<]*(</code></div>)", fix_moyen, c, count=1)
     # Ambitieux
-    c = re.sub(r"<code>[^<]*</code>\s*<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>\d+ tickets[^<]*</p>",
-               f"<code>{' — '.join(sel)}</code>\n<p style='margin:.5rem 0 0;color:#64748b;font-size:.875rem;'>{nb_comb} tickets &#215; 2 &#8364; &#8776; {multi_cost} &#8364;</p>", c, count=1)
+    def fix_amb(m): return f"{m.group(1)}{' — '.join(sel)}{m.group(2)}"
+    c = re.sub(r"(<h4>Multi 4/5/6[^<]*</h4><code>)[^<]*(</code>)", fix_amb, c, count=1)
     rows = []
     for num in sorted(int(k) for k in ch):
         h = ch[str(num)]
