@@ -1,11 +1,11 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 4,
-    "base_in_top5_rate": "2/4",
-    "base_wins_rate": "0/4",
-    "selection_avg_in_top5": "3.5/5",
-    "exact_order_rate": "0/4"
+    "total_validated": 5,
+    "base_in_top5_rate": "2/5",
+    "base_wins_rate": "0/5",
+    "selection_avg_in_top5": "3.6/5",
+    "exact_order_rate": "0/5"
   },
   "predictions": [
     {
@@ -252,6 +252,62 @@
           4
         ],
         "winner": 1
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "hippo": "Laval",
+      "course": "Grand Prix Anjou-Maine",
+      "discipline": "Trot Attelé",
+      "dist": "2850m",
+      "slug": "pronostic-quinte-laval-30-septembre",
+      "selection": [
+        4,
+        12,
+        3,
+        14,
+        7,
+        5,
+        13,
+        15
+      ],
+      "base": 4,
+      "resultat": "5-9-7-14-15",
+      "arrivee": [
+        [
+          5,
+          "JILORD VIVA"
+        ],
+        [
+          9,
+          "IBISCUS MAN"
+        ],
+        [
+          7,
+          "L'AS DESBOIS"
+        ],
+        [
+          14,
+          "IDÉAL LIGNERIES"
+        ],
+        [
+          15,
+          "INMAROSA"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": false,
+        "base_wins": false,
+        "selection_in_top5": 4,
+        "exact_order": false,
+        "top5": [
+          5,
+          9,
+          7,
+          14,
+          15
+        ],
+        "winner": 5
       }
     }
   ]
