@@ -1,171 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
-      <image:title>Bravo Quinté — Pronostics du Quinté+</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-chantilly-29-septembre.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-10.webp</image:loc>
-      <image:title>Pronostic Quinté Chantilly 29 septembre 2026 - Prix de la Chambre du Duc</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-enghien-28-septembre.html</loc>
-    <lastmod>2026-09-28T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo9.webp</image:loc>
-      <image:title>Pronostic Quinté Enghien 28 septembre 2026 - Prix de Saint-Chamond</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/comment-analyser-course-hippique.html</loc>
-    <lastmod>2026-09-27T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-9.webp</image:loc>
-      <image:title>Comment analyser une course hippique : guide complet</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-vincennes-27-septembre.html</loc>
-    <lastmod>2026-09-27T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-7.webp</image:loc>
-      <image:title>Pronostic Quinté Vincennes 27 Septembre 2026 - Grand Prix du Portugal</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-auteuil-26-septembre.html</loc>
-    <lastmod>2026-09-26T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo4.webp</image:loc>
-      <image:title>Pronostic Quinté Auteuil 26 Septembre 2026 - Prix Grandlieu</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/comment-gagner-quinte-methode-analyse.html</loc>
-    <lastmod>2026-09-25T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-12.webp</image:loc>
-      <image:title>Comment gagner au Quinté+ : Méthode complète et analyse</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-vincennes-25-septembre.html</loc>
-    <lastmod>2026-09-25T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo3.webp</image:loc>
-      <image:title>Pronostic Quinté Vincennes 25 Septembre 2026 - Prix Austria</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-compiegne-24-septembre.html</loc>
-    <lastmod>2026-09-23T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-3.webp</image:loc>
-      <image:title>Pronostic Quinté Compiègne 24 Septembre 2026</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/grand-national-du-trot-argentan.html</loc>
-    <lastmod>2026-09-22T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-4.webp</image:loc>
-      <image:title>Grand National du Trot - Argentan</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/prix-calabrais-auteuil-22-septembre.html</loc>
-    <lastmod>2026-09-22T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo8.webp</image:loc>
-      <image:title>Prix Calabrais - Auteuil</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/quint-analyse-expert-comment-lire-une.html</loc>
-    <lastmod>2026-09-22T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-1.webp</image:loc>
-      <image:title>Quinte Analyse Expert : comment lire une course</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-communaute-de.html</loc>
-    <lastmod>2026-09-20T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-5.webp</image:loc>
-      <image:title>Pronostic Quinté - Prix Communauté de Bruxelles</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-dancenis-du-20.html</loc>
-    <lastmod>2026-09-20T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/photo6.webp</image:loc>
-      <image:title>Pronostic Quinté - Prix d'Ancenis</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/methodologie.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/rending-1.webp</image:loc>
-      <image:title>methodologie</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/mentions-legales.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/logo.png</image:loc>
-      <image:title>mentions-legales</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/archives.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
-      <image:title>archives</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/resultats.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
-      <image:title>resultats</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://bravoquinte.github.io/bravoquinte/offres.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/logo.png</image:loc>
-      <image:title>offres</image:title>
-    </image:image>
+    <loc>https://bravoquinte.github.io/bravoquinte/404.html</loc>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/apropos.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/logo.png</image:loc>
-      <image:title>apropos</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/archives.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/comment-analyser-course-hippique.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/comment-gagner-quinte-methode-analyse.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/grand-national-du-trot-argentan.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/index.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/mentions-legales.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/methodologie.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/offres.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/prix-calabrais-auteuil-22-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-auteuil-1er-octobre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-auteuil-26-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-chantilly-29-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-compiegne-24-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-du-jour-analyse-bases-outsiders.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-enghien-28-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-laval-30-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-communaute-de.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-prix-dancenis-du-20.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-vincennes-25-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/pronostic-quinte-vincennes-27-septembre.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/quint-analyse-expert-comment-lire-une.html</loc>
+  </url>
+  <url>
+    <loc>https://bravoquinte.github.io/bravoquinte/resultats.html</loc>
   </url>
   <url>
     <loc>https://bravoquinte.github.io/bravoquinte/track-record.html</loc>
-    <lastmod>2026-09-29T08:00:00+00:00</lastmod>
-    <image:image>
-      <image:loc>https://bravoquinte.github.io/bravoquinte/images/video-hero.jpg</image:loc>
-      <image:title>Track Record — Transparence des pronostics</image:title>
-    </image:image>
   </url>
 </urlset>

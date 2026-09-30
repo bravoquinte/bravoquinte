@@ -33,10 +33,10 @@ def update_index_html(repo, a):
     c = re.sub(r'c\.num===\d+', f'c.num==={a.base}', c)
 
     # quinté section title
-    c = re.sub(r"<h1 class='font-display'[^>]*>[^<]*&#8212; Quinté\+</h1>",
-               f"<h1 class='font-display' style='font-size:2.5rem;color:#0f172a;margin:0 0 .5rem;'>{a.course} &#8212; Quinté+</h1>", c)
-    c = re.sub(r"<h1 class='font-display'[^>]*>Pronostic Quinté.*?</h1>",
-               f"<h1 class='font-display' style='font-size:2.5rem;margin:0 0 1rem;'>Pronostic Quinté {a.hippo} {a.date_disp}</h1>", c)
+    c = re.sub(r"<h2 class='font-display'[^>]*>[^<]*&#8212; Quinté\+</h2>",
+               f"<h2 class='font-display' style='font-size:2rem;color:#0f172a;margin:0 0 .5rem;'>{a.course} &#8212; Quinté+</h2>", c)
+    c = re.sub(r"<h2 class='font-display'[^>]*>Pronostic Quinté.*?</h2>",
+               f"<h2 class='font-display' style='font-size:2rem;margin:0 0 1rem;'>Pronostic Quinté {a.hippo} {a.date_disp}</h2>", c)
     # description
     c = re.sub(r"<p style='color:#475569;margin:0 0 2rem;'>[^<]*&#8226;[^<]*</p>",
                f"<p style='color:#475569;margin:0 0 2rem;'>{a.hippo} &#8226; {a.discipline} &#8226; {a.dist} &#8226; Corde à droite &#8226; {a.partants} partants</p>", c)
