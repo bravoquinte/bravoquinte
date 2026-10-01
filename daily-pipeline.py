@@ -292,6 +292,7 @@ def main():
     p.add_argument('--dist-prev', default=None)
     p.add_argument('--chevaux-prev', default=None, help='JSON chevaux du quinté precedent')
     a = p.parse_args()
+    a.image = 'images/video-hero.jpg'  # thumbnail YouTube du jour comme image de l'article
 
     months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
     dt = datetime.strptime(a.date, '%Y-%m-%d')
