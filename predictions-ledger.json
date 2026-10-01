@@ -1,11 +1,11 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 5,
-    "base_in_top5_rate": "2/5",
-    "base_wins_rate": "0/5",
-    "selection_avg_in_top5": "3.6/5",
-    "exact_order_rate": "0/5"
+    "total_validated": 6,
+    "base_in_top5_rate": "3/6",
+    "base_wins_rate": "0/6",
+    "selection_avg_in_top5": "3.7/5",
+    "exact_order_rate": "0/6"
   },
   "predictions": [
     {
@@ -328,9 +328,43 @@
         12
       ],
       "base": 3,
-      "resultat": null,
-      "arrivee": null,
-      "metrics": null
+      "resultat": "15-3-14-1-9",
+      "arrivee": [
+        [
+          15,
+          "LIPRIKA D'ANJOU"
+        ],
+        [
+          3,
+          "GREY FIGHTER"
+        ],
+        [
+          14,
+          "LUTÈCE ALLEN"
+        ],
+        [
+          1,
+          "WEBCAM"
+        ],
+        [
+          9,
+          "LACRYMA CHRISTI"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": true,
+        "base_wins": false,
+        "selection_in_top5": 4,
+        "exact_order": false,
+        "top5": [
+          15,
+          3,
+          14,
+          1,
+          9
+        ],
+        "winner": 15
+      }
     },
     {
       "date": "2026-10-02",
