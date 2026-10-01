@@ -309,6 +309,50 @@
         ],
         "winner": 5
       }
+    },
+    {
+      "date": "2026-10-01",
+      "hippo": "Auteuil",
+      "course": "Prix Céréaliste",
+      "discipline": "Galop Obstacle",
+      "dist": "3600m",
+      "slug": "pronostic-quinte-auteuil-1er-octobre",
+      "selection": [
+        3,
+        7,
+        4,
+        13,
+        9,
+        1,
+        14,
+        12
+      ],
+      "base": 3,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
+    },
+    {
+      "date": "2026-10-02",
+      "hippo": "Vincennes",
+      "course": "Prix Ludovica",
+      "discipline": "Trot Attelé",
+      "dist": "2700m",
+      "slug": "pronostic-quinte-vincennes-2-octobre",
+      "selection": [
+        6,
+        9,
+        4,
+        13,
+        5,
+        14,
+        11,
+        3
+      ],
+      "base": 6,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
     }
   ]
 }
