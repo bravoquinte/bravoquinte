@@ -1,11 +1,11 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 6,
-    "base_in_top5_rate": "3/6",
-    "base_wins_rate": "0/6",
-    "selection_avg_in_top5": "3.7/5",
-    "exact_order_rate": "0/6"
+    "total_validated": 7,
+    "base_in_top5_rate": "3/7",
+    "base_wins_rate": "0/7",
+    "selection_avg_in_top5": "3.6/5",
+    "exact_order_rate": "0/7"
   },
   "predictions": [
     {
@@ -384,9 +384,43 @@
         3
       ],
       "base": 6,
-      "resultat": null,
-      "arrivee": null,
-      "metrics": null
+      "resultat": "4-11-13-12-7",
+      "arrivee": [
+        [
+          4,
+          "JAIFA DE L'ITON"
+        ],
+        [
+          11,
+          "JEWEL DE BANVILLE"
+        ],
+        [
+          13,
+          "JOHNNY MIX"
+        ],
+        [
+          12,
+          "JOEY DU NOYER"
+        ],
+        [
+          7,
+          "JOB DES LOUANGES"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": false,
+        "base_wins": false,
+        "selection_in_top5": 3,
+        "exact_order": false,
+        "top5": [
+          4,
+          11,
+          13,
+          12,
+          7
+        ],
+        "winner": 4
+      }
     }
   ]
 }
