@@ -421,6 +421,28 @@
         ],
         "winner": 4
       }
+    },
+    {
+      "date": "2026-10-03",
+      "hippo": "ParisLongchamp",
+      "course": "Qatar Prix de la Place des Vosges",
+      "discipline": "Galop Plat",
+      "dist": "2500m",
+      "slug": "pronostic-quinte-longchamp-3-octobre",
+      "selection": [
+        4,
+        9,
+        13,
+        18,
+        16,
+        7,
+        11,
+        15
+      ],
+      "base": 4,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
     }
   ]
 }
