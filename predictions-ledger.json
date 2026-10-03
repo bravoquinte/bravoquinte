@@ -5,7 +5,8 @@
     "base_in_top5_rate": "3/7",
     "base_wins_rate": "0/7",
     "selection_avg_in_top5": "3.6/5",
-    "exact_order_rate": "0/7"
+    "exact_order_rate": "0/7",
+    "top5_avg_in_top5": "2.3/5"
   },
   "predictions": [
     {
@@ -28,7 +29,8 @@
       "base": 1,
       "resultat": null,
       "arrivee": null,
-      "metrics": null
+      "metrics": null,
+      "statut": "non_suivi"
     },
     {
       "date": "2026-09-25",
@@ -83,7 +85,8 @@
           10,
           15
         ],
-        "winner": 13
+        "winner": 13,
+        "top5_in_top5": 2
       }
     },
     {
@@ -139,7 +142,8 @@
           10,
           9
         ],
-        "winner": 8
+        "winner": 8,
+        "top5_in_top5": 2
       }
     },
     {
@@ -195,7 +199,8 @@
           5,
           7
         ],
-        "winner": 15
+        "winner": 15,
+        "top5_in_top5": 3
       }
     },
     {
@@ -251,7 +256,8 @@
           2,
           4
         ],
-        "winner": 1
+        "winner": 1,
+        "top5_in_top5": 3
       }
     },
     {
@@ -307,7 +313,8 @@
           14,
           15
         ],
-        "winner": 5
+        "winner": 5,
+        "top5_in_top5": 2
       }
     },
     {
@@ -363,7 +370,8 @@
           1,
           9
         ],
-        "winner": 15
+        "winner": 15,
+        "top5_in_top5": 2
       }
     },
     {
@@ -419,7 +427,8 @@
           12,
           7
         ],
-        "winner": 4
+        "winner": 4,
+        "top5_in_top5": 2
       }
     },
     {
