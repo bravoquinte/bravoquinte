@@ -452,6 +452,28 @@
       "resultat": null,
       "arrivee": null,
       "metrics": null
+    },
+    {
+      "date": "2026-10-05",
+      "hippo": "Enghien",
+      "course": "Prix des Buttes Chaumont",
+      "discipline": "Trot Attelé",
+      "dist": "2875m",
+      "slug": "pronostic-quinte-enghien-5-octobre",
+      "selection": [
+        5,
+        8,
+        13,
+        9,
+        12,
+        3,
+        11,
+        1
+      ],
+      "base": 5,
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
     }
   ]
 }
