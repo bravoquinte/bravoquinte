@@ -2,9 +2,9 @@
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
     "total_validated": 8,
-    "base_in_top5_rate": "3/8",
-    "base_wins_rate": "0/8",
-    "selection_avg_in_top5": "3.5/5",
+    "base_in_top5_rate": "4/8",
+    "base_wins_rate": "1/8",
+    "selection_avg_in_top5": "3.6/5",
     "exact_order_rate": "0/8",
     "top5_avg_in_top5": "2.2/5"
   },
@@ -449,44 +449,9 @@
         15
       ],
       "base": 4,
-      "resultat": "1-7-16-10-9",
-      "arrivee": [
-        [
-          1,
-          "LE LAVANDOU"
-        ],
-        [
-          7,
-          "MON RICIN"
-        ],
-        [
-          16,
-          "ZELKER"
-        ],
-        [
-          10,
-          "ARNAY LE DUC"
-        ],
-        [
-          9,
-          "NITY GALESTE"
-        ]
-      ],
-      "metrics": {
-        "base_in_top5": false,
-        "base_wins": false,
-        "selection_in_top5": 3,
-        "top5_in_top5": 2,
-        "exact_order": false,
-        "top5": [
-          1,
-          7,
-          16,
-          10,
-          9
-        ],
-        "winner": 1
-      }
+      "resultat": null,
+      "arrivee": null,
+      "metrics": null
     },
     {
       "date": "2026-10-05",
@@ -509,6 +474,63 @@
       "resultat": null,
       "arrivee": null,
       "metrics": null
+    },
+    {
+      "date": "2026-10-04",
+      "hippo": "ParisLongchamp",
+      "course": "Qatar Prix de l'Arc de Triomphe",
+      "discipline": "Galop Plat",
+      "dist": "2400m",
+      "slug": "pronostic-quinte-arc-de-triomphe-4-octobre",
+      "selection": [
+        1,
+        9,
+        14,
+        11,
+        12,
+        8,
+        16,
+        10
+      ],
+      "base": 1,
+      "resultat": "1-7-16-10-9",
+      "arrivee": [
+        [
+          1,
+          "DARYZ"
+        ],
+        [
+          7,
+          "BAY CITY ROLLER"
+        ],
+        [
+          16,
+          "DIAMOND NECKLACE"
+        ],
+        [
+          10,
+          "FRIENDLY SOUL"
+        ],
+        [
+          9,
+          "KALPANA"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": true,
+        "base_wins": true,
+        "selection_in_top5": 4,
+        "top5_in_top5": 2,
+        "exact_order": false,
+        "top5": [
+          1,
+          7,
+          16,
+          10,
+          9
+        ],
+        "winner": 1
+      }
     }
   ]
 }
