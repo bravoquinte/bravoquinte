@@ -1,12 +1,12 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 7,
-    "base_in_top5_rate": "3/7",
-    "base_wins_rate": "0/7",
-    "selection_avg_in_top5": "3.6/5",
-    "exact_order_rate": "0/7",
-    "top5_avg_in_top5": "2.3/5"
+    "total_validated": 8,
+    "base_in_top5_rate": "3/8",
+    "base_wins_rate": "0/8",
+    "selection_avg_in_top5": "3.5/5",
+    "exact_order_rate": "0/8",
+    "top5_avg_in_top5": "2.2/5"
   },
   "predictions": [
     {
@@ -449,9 +449,44 @@
         15
       ],
       "base": 4,
-      "resultat": null,
-      "arrivee": null,
-      "metrics": null
+      "resultat": "1-7-16-10-9",
+      "arrivee": [
+        [
+          1,
+          "LE LAVANDOU"
+        ],
+        [
+          7,
+          "MON RICIN"
+        ],
+        [
+          16,
+          "ZELKER"
+        ],
+        [
+          10,
+          "ARNAY LE DUC"
+        ],
+        [
+          9,
+          "NITY GALESTE"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": false,
+        "base_wins": false,
+        "selection_in_top5": 3,
+        "top5_in_top5": 2,
+        "exact_order": false,
+        "top5": [
+          1,
+          7,
+          16,
+          10,
+          9
+        ],
+        "winner": 1
+      }
     },
     {
       "date": "2026-10-05",
