@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /__pycache__/
-
-Sitemap: https://bravoquinte.github.io/bravoquinte/sitemap.xml
