@@ -1,12 +1,12 @@
 {
   "generated": "2026-09-28T23:49:16.542366Z",
   "stats": {
-    "total_validated": 8,
-    "base_in_top5_rate": "4/8",
-    "base_wins_rate": "1/8",
-    "selection_avg_in_top5": "3.6/5",
-    "exact_order_rate": "0/8",
-    "top5_avg_in_top5": "2.2/5"
+    "total_validated": 9,
+    "base_in_top5_rate": "5/9",
+    "base_wins_rate": "2/9",
+    "selection_avg_in_top5": "3.3/5",
+    "exact_order_rate": "0/9",
+    "top5_avg_in_top5": "2.1/5"
   },
   "predictions": [
     {
@@ -449,9 +449,44 @@
         15
       ],
       "base": 4,
-      "resultat": null,
-      "arrivee": null,
-      "metrics": null
+      "resultat": "4-5-8-17-3",
+      "arrivee": [
+        [
+          4,
+          "REMBRAND TO GO"
+        ],
+        [
+          5,
+          "SHRIHARA"
+        ],
+        [
+          8,
+          "COLGAN SENORA"
+        ],
+        [
+          17,
+          "KING TREZY"
+        ],
+        [
+          3,
+          "GOLDEN WEAVER"
+        ]
+      ],
+      "metrics": {
+        "base_in_top5": true,
+        "base_wins": true,
+        "selection_in_top5": 1,
+        "top5_in_top5": 1,
+        "exact_order": false,
+        "top5": [
+          4,
+          5,
+          8,
+          17,
+          3
+        ],
+        "winner": 4
+      }
     },
     {
       "date": "2026-10-05",
